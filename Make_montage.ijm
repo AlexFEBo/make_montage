@@ -54,9 +54,9 @@ if (file_list_488.length != file_list_647.length) {
         // Create a Stack
         run("Images to Stack", "use keep");
         // Make Montage
-        run("Make Montage...", "columns=3 rows=1 scale=0.75 font=24 title=[" + input_488 + "] label");
-        
-        // Add Scale bar to montage
+        run("Make Montage...", "columns=3 rows=1 scale=0.75 title=[" + input_488 + "] font=24 label");
+
+        // Add the scale bar
         run("Scale Bar...", "width=5 height=5 thickness=8 font=24 bold overlay");
         // Save the montage
         saveAs("Tiff", output + File.separator + "Montage_" + file_list_488[i] + ".tif");
